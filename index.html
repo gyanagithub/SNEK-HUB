@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>$SNEK Hub</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Glow animation */
+@keyframes glow {
+  0% { box-shadow: 0 0 5px #22c55e; }
+  50% { box-shadow: 0 0 20px #22c55e; }
+  100% { box-shadow: 0 0 5px #22c55e; }
+}
+
+/* Fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.container {
+  padding: 20px;
+  animation: fadeIn 1s ease-in;
+}
+
+h1 {
+  font-size: 28px;
+  color: #22c55e;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 25px;
+}
+
+/* Button style */
+.btn {
+  display: block;
+  margin: 12px auto;
+  padding: 14px;
+  width: 90%;
+  max-width: 320px;
+  background: #22c55e;
+  color: black;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: 0.3s;
+  animation: glow 2s infinite;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: #4ade80;
+}
+
+/* Section */
+.section {
+  margin: 25px 0;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.section h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+/* Floating emoji animation */
+.snake {
+  font-size: 40px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.footer {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #64748b;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="snake">🐍</div>
+
+<h1>$SNEK HUB</h1>
+<div class="subtitle">Everything you need. One place.</div>
+
+<div class="section">
+<h3>🌐 Core</h3>
+<a class="btn" href="https://snek.com" rel="noopener noreferrer">Official Site</a>
+<a class="btn" href="https://whysnek.com" rel="noopener noreferrer">All Links</a>
+</div>
+
+<div class="section">
+<h3>📊 Data</h3>
+<a class="btn" href="https://snekboard.com" rel="noopener noreferrer">Stats Dashboard</a>
+<a class="btn" href="https://snektimeline.com" rel="noopener noreferrer">Timeline</a>
+</div>
+
+<div class="section">
+<h3>🎭 Community</h3>
+<a class="btn" href="https://snekculture.com" rel="noopener noreferrer">Memes / Media</a>
+<a class="btn" href="https://snekraids.com" rel="noopener noreferrer">X Raids</a>
+</div>
+
+<div class="footer">
+Early ≠ Lucky 👀 <br>
+Early = Paying Attention
+</div>
+
+</div>
+
+</body>
+</html>
